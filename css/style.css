@@ -11,19 +11,19 @@
  header{
     background-color: rgb(22, 156, 245);
     background-image: url(../img/pattern.png);
-    background-size: 22%;  
+    background-size: 16%;  
  }
  header #logo{
     width: 200px;
     padding: 2% 0 0 1%;
  }
 
-/* Creiamo un container al interno di main dove andremmo a lavorare */
- main .container{
+/* Creiamo un container che useremo al interno di header,main e footer  */
+ .container{
     width: 1030px;
     margin-left: 1%;
  }
-/* Al interno del container ,andiamo a sistemare la parte iniziale , il titolo le foto e primi dettagli */
+/* Al interno del container ,andiamo a sistemare la parte iniziale : il titolo, le foto e i primi dettagli */
 .container .scrittore{
     color: darkgrey;
     font-size: 12px;
@@ -35,7 +35,7 @@
     font-size: 8px;
  }
 .container .foto_tim{
-    margin-top: 15px;;
+    margin-top: 15px;
 }
 .container #dettagli_foto{
     font-size: 10px;
@@ -66,4 +66,29 @@
 }
 .container table .riga_blu{
     background-color:rgb(22, 212, 245) ;
+}
+
+/* Dentro il footer mettiamo le due foto suggerite e sistemiamo le scritte  */
+footer .container .foto{
+    width: 200px;
+    height: 150px;
+}
+footer .container .foto.footeruno{
+    background-image: url(../img/monitor.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+footer .container .foto.footerdue{ 
+    background-image: url(../img/graph.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+footer .container .foto .testo{
+    padding: 5px 0 0 5px;
+    color: white;
+}
+footer .container .suggerimenti{
+    margin: 20px 0 10px 0;
+    color: darkgrey;
+    font-size: 12px;
 }
