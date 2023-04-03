@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: Noto Serif ;
+ }
+
+/* Nel header sistemiamo la grandezza del logo e il background */
+ header{
+    background-color: rgb(22, 156, 245);
+    background-image: url(../img/pattern.png);
+    background-size: 16%;  
+ }
+ header #logo{
+    width: 200px;
+    padding: 2% 0 0 1%;
+ }
+
+/* Creiamo un container che useremo al interno di header,main e footer  */
+ .container{
+    width: 1030px;
+    margin: auto;
+ }
+/* Al interno del container ,andiamo a sistemare la parte iniziale : il titolo, le foto e i primi dettagli */
+.container .scrittore{
+    color: darkgrey;
+    font-size: 12px;
+ }
+.container .scrittore #autore{
+    color: rgb(22, 156, 245);
+ }
+ .container .scrittore #data_articolo{
+    font-size: 8px;
+ }
+.container .foto_tim{
+    margin-top: 15px;
+}
+.container #dettagli_foto{
+    font-size: 10px;
+}
+/* Fine parte iniziale del titolo */
+/* Creiamo un div per distanziare gli articoli ed evidenziamo le parti importanti */
+.container .pezzo_articolo{
+    padding-top: 30px;
+}
+.container .testo_evidenziato{
+    background-color: yellow;
+}
+.container ul{
+    list-style-position: inside;
+}
+/* Sistemiamo la table dentro il container insieme alle righe da evidenziare */
+.container table{
+    width: 100%;  
+    table-layout: fixed;
+    border-collapse: collapse;  
+}
+.container table .prima_riga{
+    text-align: left;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    font-size: 15px;
+    border: 0;
+}
+.container table .riga_blu{
+    background-color:rgb(22, 212, 245) ;
+}
+
+/* Dentro il footer mettiamo le due foto suggerite e sistemiamo le scritte  */
+footer .container .foto{
+    width: 200px;
+    height: 150px;
+}
+footer .container .foto.footeruno{
+    background-image: url(../img/monitor.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+footer .container .foto.footerdue{ 
+    background-image: url(../img/graph.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+footer .container .foto .testo{
+    padding: 5px 0 0 5px;
+    color: white;
+}
+footer .container .suggerimenti{
+    margin: 20px 0 10px 0;
+    color: darkgrey;
+    font-size: 12px;
+}
