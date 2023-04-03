@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
  }
+ body{
+    font-family: Noto Serif ;
+ }
+
 /* Nel header sistemiamo la grandezza del logo e il background */
  header{
     background-color: rgb(22, 156, 245);
@@ -11,5 +15,29 @@
  }
  header #logo{
     width: 200px;
-    padding: 40px 0 10px 5px;
+    padding: 2% 0 0 1%;
  }
+
+/* Creiamo un container al interno di main dove andremmo a lavorare */
+ main .container{
+    width: 1020px;
+    margin-left: 1%;
+ }
+/* Al interno del container ,andiamo a sistemare la parte iniziale , il titolo le foto e primi dettagli */
+.container .scrittore{
+    color: darkgrey;
+    font-size: 12px;
+ }
+.container .scrittore #autore{
+    color: rgb(22, 156, 245);
+ }
+ .container .scrittore #data_articolo{
+    font-size: 8px;
+ }
+.container .foto_tim{
+    margin-top: 15px;;
+}
+.container #dettagli_foto{
+    font-size: 10px;
+}
+/* Fine parte iniziale del titolo */
